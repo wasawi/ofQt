@@ -15,7 +15,7 @@ CONFIG -= warn_on
 CONFIG += c++11
 
 QMAKE_CXXFLAGS += -std=c++11
-QMAKE_CXXFLAGS += -W
+#QMAKE_CXXFLAGS += /W
 
 QMAKE_CXXFLAGS_DEBUG   = -O0 -g
 QMAKE_CXXFLAGS_RELEASE = -O3
@@ -78,7 +78,8 @@ INCLUDEPATH *= $$OF/libs/freetype/include/freetype2
 INCLUDEPATH *= $$OF/libs/uri/include
 INCLUDEPATH *= $$OF/libs/utf8cpp/include
 
-
+INCLUDEPATH *= $$OF/libs/glu/include
+INCLUDEPATH *= $$OF/libs/videoinput/include
 INCLUDEPATH *= $$OF/libs/kiss/include
 INCLUDEPATH *= $$OF/libs/openssl/include
 INCLUDEPATH *= $$OF/libs/openssl/include/openssl
